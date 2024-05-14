@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .outerTable{
+                border-style: solid;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            .innerTable{
+                border-style: solid;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="outerTable">
+            <tr>
+                <td rowspan="2" colspan="2" class="outerTable"><b>CI</b></td>
+                <td rowspan="2" class="outerTable"><b>All Genders</b></td>
+                <td class="outerTable"><b>By Gender</b></td>
+            </tr>
+            <tr>
+                <td class="outerTable"> 
+                    <table class="innerTable">
+                        <tr>
+                            <td class="innerTable"><b>Males</b></td>
+                            <td class="innerTable"><b>Females</b></td>
+                        </tr>
+                        <tr>
+                            <td class="innerTable">123456</td>
+                            <td class="innerTable">654321</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="outerTable"><b>Rural</b></td>
+                <td class="outerTable">1234567</td>
+                <td class="outerTable">1234567</td>
+                <td class="outerTable">1234567</td>
+            </tr>
+        </table>
+    </body>
+</html>

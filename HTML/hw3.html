@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Registration Form</h2>
+
+<form action="/action_page.php">
+  <label for="user" style="margin-left: 30px;">user id:</label>
+  <input type="text" id="user" name="user" size="8"><br><br>
+  <label for="password" style="margin-left: 9px;">Password :</label>
+  <input type="text" id="password" name="password" size="8"><br><br>
+  <label for="Name" style="margin-left: 32px;">Name :</label>
+  <input type="text" id="Name" name="Name" size="40"><br><br>
+  <label for="Address" style="margin-left: 18px;">Address :</label>
+  <input type="text" id="Address" name="Address" size="40"><br><br>
+  <label for="Country" style="margin-left: 23px;">Country:</label>
+  <select id="Country" name="Country">
+    <option value="Amman">(Please select a country)</option>
+    <option value="Salt">Jordan</option>
+    <option value="Zarqa">France</option>
+  </select><br><br>
+  <label for="Zip" style="margin-left: 16px;">Zip Code:</label>
+  <input type="text" id="Zip" name="Zip" size="15"><br><br>
+  <label for="Email" style="margin-left: 38px;">Email:</label>
+  <input type="text" id="Email" name="Email" size="40"><br><br>
+  <label style="margin-left: 53px;">Sex:</label>
+  <input type="radio" id="male" value="Male" style="display: inline;">
+  <label for="male" >Male</label>
+  <input type="radio" id="female" value="Female"style="display: inline;">
+  <label for="female">Female</label><br><br>
+  <label style="margin-left: 16px;">Language:</label>
+  <input type="checkbox" id="English" value="English" style="display: inline;">
+  <label for="English" >English</label>
+  <input type="checkbox" id="Nonenglish" value="Nonenglish"style="display: inline;">
+  <label for="Nonenglish">Non English</label><br><br>
+  <label style="margin-left: 39px;">About:</label>
+  <textarea name="message" rows="10" cols="50">
+    
+    </textarea>
+
+
+  <br>
+  <button type="button" style="margin-left: 250px;margin-top: 20px;">Submit</button>
+</form>
+
+
+</body>
+</html>

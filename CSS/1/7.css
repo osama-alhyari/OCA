@@ -1,0 +1,43 @@
+article{
+    background-color: white; width: 50%;
+}
+
+body{
+    background-color: bisque;
+}
+
+h2{
+    padding-left: 7px;
+}
+
+.solidBorder{
+    border-style: solid;
+}
+
+.purpleHeader{
+    color: purple;
+}
+
+.orangeHighlight{
+    background-color: orange;
+}
+
+.yellowHighlight{
+    background-color: yellow;
+}
+
+.unborderedParagraph{
+    padding-left: 4px;
+}
+
+#purpleParagraph{
+    color: purple;
+}
+
+#borderedParagraph{
+    margin : 0 10px 10px 10px;border-style: dashed; border-color: red;
+}
+
+#dashedArticle{
+    margin : 10px 0;  border-style: dashed;
+}
