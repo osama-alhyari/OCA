@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .gridContainer{
+                display: grid;
+                grid-template-columns: 40% 60%;
+                grid-template-rows: 13% 13% 50% 24%;
+                border-style: solid;
+                border-width: 1px;
+                border-color: black;
+                }
+            .imageDiv{
+                grid-row: span 4;
+                grid-column: span 1;
+            }
+            .textDiv{
+                grid-row: span 1;
+                grid-column: span 1;
+            }
+            p{
+                font-size: calc((2vw + 2vh)/2);
+                line-height: calc((2vw + 2vh)/2);
+            }
+
+            @media (min-width: 900px) {
+                .flexContainer{
+                    flex-direction: row;
+                    display: flex;
+                    height: 97vh;
+                    width: 100%;
+                    align-content: center;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+                .flexItem {
+                    height: 50vh;
+                    width: 32%;
+                }
+                .middleBreak{
+                    display: initial;
+                }
+                .startBreak{
+                    display: none;
+                }
+
+            }
+            @media (max-width: 901px) {
+                .flexContainer{
+                    flex-direction: column;
+                    display: flex;
+                    height: 97vh;
+                    width: 100%;
+                    align-content: center;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+                .flexItem {
+                    height: 30vh;
+                    width: 100%;
+                }
+                .middleBreak{
+                    display: none;
+                }
+                .startBreak{
+                    display: initial;
+                }
+                .profileText{
+                    line-height: calc((1.5vw + 1.5vh)/2);
+                }
+            }
+            /* @media (max-height: 900px){
+                br{
+                    display: none;
+                }
+            }
+            @media (min-height: 901px){
+                br{
+                    display: initial;
+                }
+            } */
+        </style>
+    </head>
+    <body>
+        <div class="flexContainer">
+            <div class="gridContainer , flexItem" >
+                <div class="imageDiv">
+                    <img src="clouds.jpg" height="100%" width="100%">
+                </div>
+                <div class="textDiv"><p style="color : #B6C3D0;"><span><img src="lock.png" style = "height: calc((2vw + 2vh)/2) ; width: calc((2vw + 2vh)/2) ; margin-left: 2%; margin-right: 2%; padding-top: 1%;"></span>Members only</p></div>
+                <div class="textDiv"><p style="margin-left: 2%; color: black;"><b>Best Mountain Trails 2020</b></p></div>
+                <div class="textDiv"><p style="margin-left: 2%; color: #B6C3D0;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis incidunt quod labore sint odio, ad praesentium placeat rem aspernatur nulla</p></div>
+                <div class="textDiv"><img src="prof.png" style="float: left;height: calc((4vw + 4vh)/2) ; width: calc((4vw + 4vh)/2) ; margin-left: 2%;" ><p class="profileText"><br class="startBreak"> John Smith <br class="middleBreak"> <span style="color: #B6C3D0;">Aug 18</span></p></div>
+            </div>
+            <div class="gridContainer , flexItem" style="grid-template-rows: 13% 63% 24%;">
+                <div class="imageDiv" style="grid-row: span 3;">
+                    <img src="rivers.jpg" height="100%" width="100%">
+                </div>
+                <div class="textDiv"><p style="margin-left: 2%; color: black;"><b>15 Rivers in Norway</b></p></div>
+                <div class="textDiv"><p style="margin-left: 2%; color: #B6C3D0;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis incidunt quod labore sint odio, ad praesentium placeat rem aspernatur nulla</p></div>
+                <div class="textDiv"><img src="prof.png" style="float: left;height: calc((4vw + 4vh)/2) ; width: calc((4vw + 4vh)/2) ;margin-left: 2%;" ><p class="profileText"><br class="startBreak"> John Smith <br class="middleBreak"> <span style="color: #B6C3D0;">Aug 18</span></p></div>
+            </div>
+            <div class="gridContainer , flexItem" style="grid-template-rows: 10% 16% 50% 24%;">
+                <div class="imageDiv">
+                    <img src="autumn.jpg" height="100%" width="100%">
+                </div>
+                <div class="textDiv"><p style="color : #B6C3D0;"><span><img src="lock.png" style = "height: calc((2vw + 2vh)/2) ; width: calc((2vw + 2vh)/2) ; margin-left: 2%; margin-right: 2%; padding-top: 1%;"></span>Members only</p></div>
+                <div class="textDiv"><p style="margin-left: 2%; color: black;"><b>5 National Forests Across The US</b></p></div>
+                <div class="textDiv"><p style="margin-left: 2%; color: #B6C3D0;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis incidunt quod labore sint odio, ad praesentium placeat rem aspernatur nulla</p></div>
+                <div class="textDiv"><img src="prof.png" style="float: left;height: calc((4vw + 4vh)/2) ; width: calc((4vw + 4vh)/2) ; margin-left: 2%;"><p class="profileText"><br class="startBreak"> John Smith <br class="middleBreak"> <span style="color: #B6C3D0;">Aug 18</span></p></div>
+            </div>
+        </div>
+    </body>
+</html>

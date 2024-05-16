@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.firstContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2vh 2vw;
+    background-color: #EDEDED;
+    height: 30vh;
+    width: 100vw;
+    padding: 1%;
+}
+.firstContainer > div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.firstContainer > div > img{
+    width: calc((3vw + 3vh)/2);
+    height: calc((3vw + 3vh)/2);
+}
+.firstContainer > div > p{
+    color: white;
+    font-size: calc((2vw + 2vh)/2);
+}
+@media (max-width: 901px){
+    .firstContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vh 2vw;
+    background-color: #EDEDED;
+    height: 60vh;
+    width: 100vw;
+    padding: 1%;
+}
+}
+@media (max-width: 750px){
+    .secondContainer{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 2vh 2vw;
+    background-color: white;
+    height:126vh;
+    width: 100vw;
+    padding: 1%;
+}
+.chartTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.firstContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vh 2vw;
+    background-color: #EDEDED;
+    height: 60vh;
+    width: 100vw;
+    padding: 1%;
+}
+}
+@media (min-width: 751px){
+    .secondContainer{
+        display: grid;
+        background-color: white;
+        grid-template-columns: 75% 25%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        height: 70vh;
+        width: 100vw;
+        padding: 1%;
+    }
+    .chartTitle{
+        grid-column: span 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+}
+
+.chartImage{
+    grid-row: span 4;
+}
+.chartImage > img{
+    width : 100%;
+    height: 100%;
+}
+.flexRightContainer{
+    grid-row: span 4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.flexRightContainer > div{
+    display: flex;
+    background-color: #343A40;
+    width: 45%;
+    height: 25%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.flexRightContainer > div > p{
+    color: white;
+    font-size: calc((2vw + 2vh)/2);
+}
+.flexRightContainer > div > img{
+    width: calc((2vw + 2vh)/2);
+    height: calc((2vw + 2vh)/2);
+}
