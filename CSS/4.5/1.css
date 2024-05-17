@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border-radius: 75px;
+    box-shadow: 2px 2px 1px 1px #cccccc, -1px -1px 1px 1px #cccccc;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 35%;
+    justify-content: flex-start;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 12.5vh;
+    width: 100%;
+    margin: 15px 0 15px 15px;
+}
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+    height: 16vh;
+    margin-left: 12px;
+    margin-top: 22px;
+}
+
+hr{
+    margin: 0px 15px;
+    background-color: rgb(233, 233, 233);
+    border: none;
+    height: 1px;
+}

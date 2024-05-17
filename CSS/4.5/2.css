@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.rightDiv{
+    float: right;
+    width: 42.5%;
+    background-color: red;
+    height: 100vh;
+}
+.leftDiv{
+    float: left;
+    width: 55%;
+    height: 100vh;
+}
+
+h4, h2, h1, a, p{
+    margin-left: 15px;
+    width: 95%;
+}
+.firstDiv{
+    height: 20vh;
+}
+.secondDiv{
+    height: 25vh;
+    margin-top: 40px;
+}
+.thirdDiv{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 15px;
+}
+ul {
+    list-style-image: url("check.png");
+    list-style-position: inside;
+}
+li{
+    margin-top: 10px;
+}
+.fourthDiv{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+.secondFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.freeTrialDiv{
+    margin-left: 15px; 
+    background-color: #06A3DA; 
+    color: white; 
+    width: 144px; 
+    height: 48px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin-top: 15px;
+}
