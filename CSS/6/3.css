@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: calc((1.75vw + 1.75vh)/2)
+    }
+.navFlex{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 10vh;
+    background-color: #333333;
+    justify-content: space-between;
+}
+
+.navFlex > h3{
+    font-style: italic; 
+    font-weight: bold; 
+    color: white; 
+    margin-left: 2vw;
+}
+
+.navFlex > nav > a {
+    color: white; 
+    margin: 0 1vw;
+}
+
+.mainContainer{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    width: 100%;
+    height: 90vh;
+}
+
+.leftContainer{
+    display: grid;
+    height: 90vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    margin-left: calc((1vw + 1vh)/2);
+    gap: calc((1vw + 1vh)/2);
+}
+
+.rightContainer{
+    background-color: #333333;
+    border: calc((1vw + 1vh)/2) solid white;
+}
+
+.rightContainer > p{
+    color: white;
+    margin: calc((1vw + 1vh)/2);
+}
+
+.headingRow{
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 25vh;
+}
+
+.cardContainer{
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    height: 30vh;
+    border: calc((0.4vw + 0.4vh)/2) solid #333333;
+    background-color: #333333;
+}
+
+.cardTitle{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-size: calc((2.75vw + 2.75vh)/2);
+    font-weight: bold;
+    margin: calc((1vw + 1vh)/2);
+}
+
+.cardText{
+    grid-row: span 4; 
+    background-color: white;
+}
+
+.cardText > p{
+    margin: calc((1vw + 1vh)/2);
+}
+
+@media (max-height: 932px) and (max-width: 600px){
+    *{
+        font-size: calc((2.5vw + 2.5vh)/2)
+    }
+    .mainContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 153vh;
+    }
+    .leftContainer{
+        display: grid;
+        height: 90vh;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 3fr 3fr;
+        margin-left: calc((1vw + 1vh)/2);
+        gap: calc((1vw + 1vh)/2);
+    }
+    
+    
+    .headingRow{
+        grid-column: span 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 25vh;
+    }
+    .cardContainer{
+        display: grid;
+        grid-template-rows: 1fr 4fr;
+        height: 30vh;
+        border: calc((0.4vw + 0.4vh)/2) solid #333333;
+        background-color: #333333;
+    }
+
+}
