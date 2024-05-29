@@ -144,3 +144,157 @@
         font-family: boldFont;
     }
 }
+
+@media only screen 
+and (device-width: 430px) 
+and (device-height: 932px) 
+and (-webkit-device-pixel-ratio: 3) 
+
+
+{
+    .mainContainer{
+        grid-template-columns: 1fr;
+    }
+    .stickySection{
+        /* background-color: green; */
+        position: static;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navInSticky{
+        display: none;
+    }
+    .stickyContentContainer{
+        height: 75vh;
+        margin-left: 5vw;
+        width: 100%;
+    }
+    .stickyContentContainer > h1{
+        font-size: 10vw;
+    }
+    .stickyContentContainer > h3{
+        font-size: 5vw;
+        margin-top: 4vh;
+        padding-left: 0.25vw;
+    }
+    .stickyContentContainer > h5{
+        font-size: 3.75vw;
+        margin-top: 4vh;
+        padding-left: 0.25vw;
+    }
+    .contactInfo{
+        /* background-color: blueviolet; */
+        width: 50%;
+    }
+    .scrollableSections{
+        /* background-color: aqua; */
+        width: 100%;
+    }
+    .aboutSectionContainer{
+        height: auto;
+        /* background-color: brown; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0;
+        margin-left: 5vw;
+    }
+    .aboutSectionContent{
+        /* background-color: black; */
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .aboutSectionContent > p{
+        font-size: 3.625vw;
+    }
+    .aboutSectionContent > p > a{
+        font-size: 3.625vw;
+    }
+    .experienceSectionContainer{
+        height: auto;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+    .experienceSectionContent{
+        grid-template-columns: 1fr;
+        padding: 1% 2vw;
+    }
+    .date{
+        font-size: 5vw;
+    }
+    .experienceDetails > p{
+        font-size: 3vw;
+    }
+    
+    .experienceDetails > h3{
+        font-size: 4vw;
+    }
+    .skillsDiv > p{
+        font-size: 3vw;
+    }
+    .viewResumeDiv > p {
+        font-size: 4vw;
+    }
+    
+    .viewResumeDiv:hover > p{
+        font-size: 6vw;
+    }
+    .projectsSectionContainer{
+        margin-left: 3vw;
+        margin-right: 3vw;
+        height: auto;
+    }
+    
+    .projectsSectionContent{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 3% 2vw;
+        margin-bottom: 5vh;
+        border-color: white;
+        border-width: 2px;
+        border-style: solid;
+        /* background-color: lightpink; */
+    }
+    .projectsSectionContent > img{
+        width: 100%;
+        grid-row-start: 2;
+    }
+    .projectDetails{
+        display: flex;
+        flex-direction: column;
+    }
+    .projectDetails > h4{
+        color: #D2DCEE;
+        font-size: 5vw;
+    }
+    .projectDetails > p{
+        color: #8195B8;
+        font-size: 3.5vw;
+    }
+    .footerContent{
+        font-size: 3vw;
+    }
+    .sectionTitle{
+        backdrop-filter: blur(50px);
+        width: 100%;
+        position: sticky;
+        top: 0;
+        display: flex;
+        align-items: center;
+    }
+    .sectionTitle > p{
+        color: #D0DAED;
+        font-size: 5vw;
+        margin-left: 5vw;
+        padding: 3vh 0;
+        font-family: boldFont;
+    }
+    .sectionWrapper{
+        height: auto;
+    }
+}

@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Metropolis;
+}
+
+@font-face{
+    font-family: Metropolis;
+    src: url(Metropolis-Regular.otf);
+}
+
+@font-face{
+    font-family: Barlow;
+    src: url(BarlowSemiCondensed-Regular.ttf);
+}
+
+p, span{
+    font-family: Metropolis;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.navBar{
+    display: flex;
+    background-color: #0093A4;
+    height: 8.428vh;
+    width: 100%;
+}
+
+.navLeft{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    gap: 2.5vw;
+}
+
+.navLeft > img{
+    margin-left: 1.8vw;
+}
+
+.navLeft > p{
+    color: white;
+    font-family: Metropolis;
+    padding: 3px 0;
+    border-bottom: 2px solid #0093A4;
+    font-size: 14px;
+}
+
+.navLeft > p:hover{
+    border-bottom: 2px solid orange;
+    cursor: pointer;
+}
+
+.navRight{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 40%;
+    gap: 9px;
+}
+
+.createNav{
+    display: flex;
+    justify-content: space-between;
+    width: 96px;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.createNav:hover{
+    cursor: pointer;
+}
+
+.createNav > p{
+    color: white;
+    font-family: Metropolis;
+    padding: 7px 0 7px 12px;
+}
+
+.createNav > img{
+    padding: 7px 12px 7px 0px;
+}
+
+.signNav{
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.signNav:hover{
+    cursor: pointer;
+}
+
+.signNav > p{
+    color: white;
+    padding: 7px 12px;
+}
+
+.questionNav{
+    display: flex;
+    background-color: white;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 9px;
+}
+
+.questionNav > p{
+    color: #0093A4;
+}
+
+.musicSection{
+    display: flex;
+    width: 100%;
+    height: 84vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(msc1.png);
+}
+
+.secondMusic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 84vh;
+    gap: 25px;
+}
+
+.firstMusicLine > p{
+    color: white;
+    font-size: 20px;
+}
+
+.firstMusicLine > p > span{
+    font-weight: 700;
+}
+
+.secondMusicLine > p{
+    font-size: 36px;
+    color: white;
+    font-weight: 500;
+    font-family: Barlow;
+}
+
+.thirdMusicLine > p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.fourthMusicLine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.fourthMusicLine > p {
+    border: 2px solid white;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.firstMusicButton{
+    color : #292F36;
+    background-color: white;
+}
+
+.fifthMusicLine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fifthMusicLine > p{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 2px;
+}
+
+.secondMusicButton{
+    color: white;
+}
+
+.thirdMusic{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.mainContainer > p{
+    color: #292F36;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.statsContainer{ /* in responsive make 3 rows 2 cols */
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.firstGridItem{ /*  in responsive make span 2 cols*/
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.restGridItems{
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.numberGrid{
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(41,47,54);
+}
+
+.numberGrid:hover{
+    color: #0093a4;
+    cursor: pointer;
+}
+
+.textGrid{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(41,47,54);
+    text-align: center;
+}
+
+.cardsContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 1;
+    height: 60vh;
+    width: 24vw;
+}
+
+.topCard{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 34vh;
+    width: 98%;
+}
+
+.bottomCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 26vh;
+    width: 98%;
+}
+
+.middleCard{
+    display: flex;
+    flex-direction: column;
+    height: 11vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.middleLink{
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Metropolis;
+}
+
+.middleLink:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.middleText{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Metropolis;
+    margin-top: 10px;
+}
+
