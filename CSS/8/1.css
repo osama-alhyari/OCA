@@ -24,6 +24,7 @@ p, span{
     flex-direction: column;
     width: 100%;
     height: auto;
+    align-items: center;
 }
 
 .navBar{
@@ -200,7 +201,7 @@ p, span{
     align-items: center;
 }
 
-.mainContainer > p{
+.firstPlainText{
     color: #292F36;
     font-size: 18px;
     font-weight: 400;
@@ -209,9 +210,28 @@ p, span{
     padding-bottom: 20px;
 }
 
+.secondPlainText{
+    color: #292F36;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 24px;
+}
+
+.thirdPlainText{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 13vw 20px 13vw;
+}
+
 .statsContainer{ /* in responsive make 3 rows 2 cols */
     display: grid;
     grid-template-columns: repeat(5,1fr);
+    margin-bottom: 25px;
+    width: 100%;
 }
 
 .firstGridItem{ /*  in responsive make span 2 cols*/
@@ -253,7 +273,8 @@ p, span{
 .cardsContainer{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 5px;
+    gap: 10px;
+    width: 100%;
 }
 
 .card{
@@ -263,7 +284,7 @@ p, span{
     align-items: center;
     grid-column: span 1;
     height: 60vh;
-    width: 24vw;
+    width: 100%;
 }
 
 .topCard{
@@ -271,7 +292,7 @@ p, span{
     justify-content: center;
     align-items: flex-end;
     height: 34vh;
-    width: 98%;
+    width: 100%;
 }
 
 .bottomCard{
@@ -280,7 +301,7 @@ p, span{
     justify-content: space-around;
     align-items: center;
     height: 26vh;
-    width: 98%;
+    width: 100%;
 }
 
 .middleCard{
@@ -312,3 +333,149 @@ p, span{
     margin-top: 10px;
 }
 
+.orangeBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    background-color: #FFA400;
+    width: 100%;
+    margin: 20px;
+}
+
+.orangeBanner > p{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.smallPicsGrid{
+    width: 96%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.smallPicsGrid > img{
+    width: 100%;
+}
+
+.donateButton{
+    font-family: Metropolis;
+    font-weight: 600;
+    background-color: #8C52BA;
+    padding: 12px 16px;
+    border: 2px solid #8C52BA;
+    border-radius: 5px;
+    color: white; 
+    font-size: 16px;
+    text-align: center;
+    transition: 0.5s;
+    margin-bottom: 25px;
+}
+
+.donateButton:hover{
+    background-color: #65249a;
+    border: 2px solid #65249a;
+    cursor: pointer;
+}
+
+.fourthPlainText{
+    font-family: Metropolis;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+    color: #8C52BA;
+    text-align: center;
+    transition: 0.5s;
+    margin-bottom: 45px;
+}
+
+.fourthPlainText:hover{
+    color: #65249a;
+    cursor: pointer;
+}
+
+.footerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292F36;
+    width: 100%;
+    height: 30vh;
+}
+
+.footerContent{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.footerLinks{
+    grid-column: span 4;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Metropolis;
+}
+
+.footerLinks > span{
+    margin: 0 8px;
+}
+
+.footerLinks > span:hover{
+    cursor: pointer;
+}
+
+
+.languageSelect{
+    grid-column: span 1;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.languageSelect > img{
+    padding-right: 10px;
+}
+
+.languageSelect > p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Metropolis;
+}
+
+.footerText{
+    grid-column: span 4;
+    color: #CBCDCF;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Metropolis;
+}
+
+.socialIcons{
+    padding-top: 7px;
+    grid-column: span 1;
+    /* background-color: #8C52BA; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socialIcons > img{
+    width:20px;
+    height: 20px;
+}
+
+.footerContent > img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.burgerNav{
+    display: none;
+}
+
+.mobileFooter{
+    display: none;
+}

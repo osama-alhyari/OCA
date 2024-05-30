@@ -1,0 +1,57 @@
+@media (max-width : 960px){
+    .navLeft > p{
+        display: none;
+    }
+    .createNav{
+        display: none;
+    }
+    .questionNav{
+        display: none;
+    }
+    .burgerNav{
+        display: block;
+        margin-right: 9px;
+    }
+    .statsContainer{
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+    .firstGridItem{
+        grid-column: span 2;
+    }
+    .cardsContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .smallPicsGrid{
+        grid-template-columns: 1fr;
+    }
+    .footerContainer{
+        height: 40vh;
+    }
+    .footerContent{
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
+    .socialIcons{
+        grid-row-start: 2;
+        grid-column-start: 2;
+        width: 50%;
+        margin-bottom: 25px;
+    }
+    .languageSelect{
+        width: 50%;
+        justify-self: end;
+        margin-bottom: 25px;
+    }
+    .footerText{
+        text-align: center;
+    }
+    .footerContent > img{
+        grid-column: span 2;
+        width: 30%;
+        justify-self: center;
+    }
+    .footerLinks{
+        margin-bottom: 25px;
+    }
+}
