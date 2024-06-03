@@ -9,7 +9,7 @@ const rl = readline.createInterface({
 //print "Both numbers are greater than 10". Otherwise, print "At least one number is not greater than 10".
 let num1, num2;
 rl.question(`Enter two numbers plz (seperate them by a space)`, (nums) => {
-  arr = nums.split(" ");
+  let arr = nums.split(" ");
   num1 = Number(arr[0]);
   num2 = Number(arr[1]);
   if (num1 > 10 && num2 > 10) {
