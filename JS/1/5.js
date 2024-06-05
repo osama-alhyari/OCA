@@ -528,10 +528,10 @@ Ex: counter()
 => 3
 
 */
-let count = { count: 0 };
+let count = 0;
 function counter() {
-  count.count += 1;
-  console.log(count.count);
+  count += 1;
+  console.log(count);
 }
 counter();
 counter();
@@ -569,8 +569,8 @@ Ex: counter()
 */
 
 function resetCounter() {
-  console.log(`${count.count} and the counter reset now`);
-  count.count = 0;
+  console.log(`${count} and the counter reset now`);
+  count = 0;
 }
 resetCounter();
 counter();
