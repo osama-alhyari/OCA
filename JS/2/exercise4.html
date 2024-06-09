@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #5: Input check for minimmum number of charecter should be 6 and password match in both input </title>
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        .err {
+            color: red;
+            font-size: 0.7em;
+        }
+        #pw1_check , #pw2_check{
+            display: none;
+        }
+    </style>
+    <script>
+        /* TODO complete this part */
+        function validationFunction(e){
+            e.preventDefault()
+            document.querySelector("#password1").value.length < 6 ? document.querySelector("#pw1_check").style.display = "block" : document.querySelector("#pw1_check").style.display = "none"
+            document.querySelector("#password2").value != document.querySelector("#password1").value ? document.querySelector("#pw2_check").style.display = "block" : document.querySelector("#pw2_check").style.display = "none"
+            if((document.querySelector("#password1").value.length >= 6) && (document.querySelector("#password2").value === document.querySelector("#password1").value)){
+                document.querySelector("#password1").value = ""
+                document.querySelector("#password2").value = ""
+            }
+        }
+    </script>
+</head>
+<body>
+
+<form name="pw">
+    <table>
+        <tr>
+            <td>Password (min 6 characters):</td>
+            <td><input type="password" name="password1" id="password1" size="10" placeholder="Password"></td>
+            <td>
+                <div id="pw1_check" class="err">Too Short</div>
+            </td>
+        </tr>
+        <tr>
+            <td>Repeat password:</td>
+            <td><input type="password" name="password2" id="password2" size="10" placeholder="Password"></td>
+            <td>
+                <div id="pw2_check" class="err">Passwords dont match</div>
+            </td>
+        </tr>
+    </table>
+
+    <input type="submit" value="Submit" id="submitBtn" onclick="validationFunction(event)"/>
+</form>
+
+</body>
+</html>
+

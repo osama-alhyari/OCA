@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            display: none;
+        }
+    </style>
+    <script>
+        function changeFlag(){
+            const nodeList = document.querySelectorAll("img");
+            for (let i = 0; i < nodeList.length; i++) {
+                nodeList[i].style.display = "none";
+            }
+            let selected = document.querySelector("#country").value
+            document.querySelector(`#${selected}`).style.display = "block"
+        }
+    </script>
+</head>
+<body>
+    <form name="form">
+        <select name="country" id="country" onchange="changeFlag()">
+            <option selected>Select</option>
+            <option value="jordan">Jordan</option>
+            <option value="palestine">Palestine</option>
+            <option value="spain">Spain</option>
+        </select>
+    </form>
+    <img src="jordan.svg" id="jordan">
+    <img src="palestine.svg" id="palestine">
+    <img src="spain.png" id="spain">
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #2: Changing box color on click</title>
+    <style>
+        #mydiv {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        /* TODO: write JS code here */
+        function changeColor(){
+            let r = Math.floor(Math.random() * 256);
+            let g = Math.floor(Math.random() * 256);
+            let b = Math.floor(Math.random() * 256);
+            document.querySelector("#mydiv").style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+        } 
+    </script>
+</head>
+<body>
+<div id="mydiv" onclick="changeColor()"></div>
+</body>
+</html>

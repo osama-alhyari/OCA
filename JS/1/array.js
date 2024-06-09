@@ -28,19 +28,19 @@
 // 3- Favorite Movie (4)
 // */
 
-// const arr = [];
-// for (let i = 0; i < 5; i++) {
-//   arr.push("Mansaf");
-// }
-// for (let i = 0; i < 3; i++) {
-//   arr.push("Football");
-// }
+const arr = [];
+for (let i = 0; i < 5; i++) {
+  arr.push("Mansaf");
+}
+for (let i = 0; i < 3; i++) {
+  arr.push("Football");
+}
 
-// for (let i = 0; i < 4; i++) {
-//   arr.push("My dinner with Andre");
-// }
+for (let i = 0; i < 4; i++) {
+  arr.push("My dinner with Andre");
+}
 
-// console.log(arr);
+console.log(arr);
 // /*
 // 4
 // Create a function called firstOfArray
@@ -64,10 +64,10 @@
 // Ex: lastOfArray([1,4,5]) => 5
 // Ex: lastOfArray(["t","u","g","x"]) => "x"
 // */
-// function lastOfArray(arr) {
-//   return arr[arr.length - 1];
-// }
-// console.log(lastOfArray([1, 2]));
+function lastOfArray(arr) {
+  return arr[arr.length - 1];
+}
+console.log(lastOfArray([1, 2]));
 // /*
 // 6
 // Using console make this array to be like this one (push, unshift, shift, pop)
@@ -283,25 +283,25 @@
 
 // console.log(removeFromArrayFor([2, 3, 4, 5, -1, 3], -1));
 
-function removeFromArrayWhile(arr, num) {
-  let j = 0;
-  let originalLength1 = arr.length;
-  while (j <= originalLength1) {
-    console.log("here");
-    if (arr[j] === num) {
-      console.log("deleted" + arr[j] + "ffff" + j);
-      console.log("here");
-      arr.splice(j, 1);
-      originalLength1 -= 1;
-      console.log("deleted" + arr[j] + "ffff" + j);
-      continue;
-    }
-    j += 1;
-  }
-  return arr;
-}
+// function removeFromArrayWhile(arr, num) {
+//   let j = 0;
+//   let originalLength1 = arr.length;
+//   while (j <= originalLength1) {
+//     console.log("here");
+//     if (arr[j] === num) {
+//       console.log("deleted" + arr[j] + "ffff" + j);
+//       console.log("here");
+//       arr.splice(j, 1);
+//       originalLength1 -= 1;
+//       console.log("deleted" + arr[j] + "ffff" + j);
+//       continue;
+//     }
+//     j += 1;
+//   }
+//   return arr;
+// }
 
-console.log(removeFromArrayWhile([2, 3, 4, 5, -1, 3], -1));
+// console.log(removeFromArrayWhile([2, 3, 4, 5, -1, 3], -1));
 
 /*
 16
