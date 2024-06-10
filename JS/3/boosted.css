@@ -1,0 +1,20 @@
+@media (max-width : 1000px){
+    #left{
+        display: none;
+    }
+    #right{
+        width: 100%;
+    }
+    #right > div > div{
+        width: 100%;
+    }
+    input[type="button"]{
+        width: 100%;
+    }
+}
+
+@media (min-width : 1001px){
+    #signup{
+        width: 301.4px;
+    }
+}
