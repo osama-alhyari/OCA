@@ -80,11 +80,25 @@
             <h1>Create an account</h1>
           </div>
           <div class="mb-4 form-group col-lg-6 col-md-7">
+            <label for="name" class="is-required">Full Name</label>
+            <div class="input-group">
+              <input
+                oninput="checkDone(), nameCorrect()"
+                name="name"
+                type="text"
+                class="form-control email"
+                id="name"
+                value
+              />
+            </div>
+            <small>eg: Osama Alhyari<br /> </small>
+            <small id="errName"></small>
+          </div>
+          <div class="mb-4 form-group col-lg-6 col-md-7">
             <label for="email" class="is-required">Email Adress</label>
             <div class="input-group">
               <input
-                onkeyup="checkDone()"
-                onkeydown="emailCorrect()"
+                oninput="emailCorrect(),checkDone()"
                 name="email"
                 type="text"
                 class="form-control email"
@@ -99,8 +113,7 @@
             <label for="mobile" class="is-required">Phone Number</label>
             <div class="input-group">
               <input
-                onkeyup="checkDone()"
-                onkeydown="phoneCorrect()"
+                oninput="phoneCorrect(),checkDone()"
                 name="mobile"
                 type="text"
                 class="form-control mobile"
@@ -115,8 +128,7 @@
             <label for="password" class="is-required">Password</label>
             <div class="input-group">
               <input
-                onkeyup="checkDone()"
-                onchange="passwordCorrect()"
+                oninput="passwordCorrect(),checkDone()"
                 name="password"
                 type="password"
                 class="form-control password"
@@ -128,6 +140,20 @@
               >The Password should be between 6-18 characters. <br />
             </small>
             <small id="errPass"></small>
+          </div>
+          <div class="mb-4 form-group col-lg-6 col-md-7">
+            <label for="confirm" class="is-required">Confirm Password</label>
+            <div class="input-group">
+              <input
+                oninput="confirmCorrect(),checkDone()"
+                name="confirm"
+                type="password"
+                class="form-control password"
+                id="confirm"
+                value
+              />
+            </div>
+            <small id="errConfirm"></small>
           </div>
           <div class="mb-4 form-group col-lg-6 col-md-7">
             <div class="form-check">
@@ -163,6 +189,7 @@
               type="button"
               class="btn btn-secondary btn-lg btn-block"
               value="Already have an account?login"
+              onclick="myLocation()"
             />
           </div>
         </div>
