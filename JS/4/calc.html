@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="calc.css">
+</head>
+<body style="background-color: #A8BF7E;">
+<div class="grid-container">
+  <div id="screen"></div>
+  <div class="buttons" onclick="buttonPress('1')">1</div>
+  <div class="buttons" onclick="buttonPress('2')">2</div>  
+  <div class="buttons" onclick="buttonPress('3')">3</div>
+  <div class="operators" onclick="operation('+')"><b>+</b></div>
+  <div class="buttons" onclick="buttonPress('4')">4</div>
+  <div class="buttons" onclick="buttonPress('5')">5</div>
+  <div class="buttons" onclick="buttonPress('6')">6</div>
+  <div class="operators" onclick="operation('-')"><b>-</b></div>
+  <div class="buttons" onclick="buttonPress('7')">7</div>
+  <div class="buttons" onclick="buttonPress('8')">8</div>
+  <div class="buttons" onclick="buttonPress('9')">9</div>
+  <div class="operators" onclick="operation('*')"><b>*</b></div>
+  <div class="buttons" onclick="clear1()" id="clear" style="background-color: #FBA0AB;">C</div>
+  <div class="buttons" onclick="buttonPress('0')">0</div>
+  <div class="buttons" onclick="equal()" id="equal"><b>=</b></div>
+  <div class="operators" onclick="operation('/')" id="divide"><b>/</b></div>   
+</div>
+<script src="calc.js"></script>
+</body>
+</html>

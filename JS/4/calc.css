@@ -1,0 +1,49 @@
+.grid-container {
+    display: grid;
+    background-color: #A0D0EA;
+    grid-template-columns: auto auto auto auto;
+    gap: 12px;
+    position: absolute;
+    top :5%;
+    right : 32.5%;
+    width: 35%;
+    height: 80vh;
+    padding: 15px;
+    border-radius: 7px;
+  }
+  
+  .buttons {
+    background-color: #EFEFEF;
+    text-align: center;
+    padding-top: 35px;
+    font-size: x-large;
+    box-shadow: 0 5px 2px #80A6BB;
+  }
+
+  .buttons:hover{
+    background-color: #acacac;
+    cursor: pointer;
+  }
+
+  .operators{
+    background-color: #EFFF93;
+    text-align: center;
+    padding-top: 35px;
+    font-size: x-large;
+    box-shadow: 0 5px 2px #80A6BB;
+  }
+
+  .operators:hover{
+    background-color: #96a05c;
+    cursor: pointer;
+  }
+
+  #screen{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: #F1FBEB;
+    text-align: center;
+    height: 50px;
+    font-size: x-large;
+    box-shadow: 0 5px 2px #80A6BB;
+  }

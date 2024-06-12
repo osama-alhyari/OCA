@@ -86,7 +86,7 @@
     margin: calc((1vw + 1vh)/2);
 }
 
-@media (max-height: 932px) and (max-width: 600px){
+@media (max-height: 933px) and (max-width: 431px) and (-webkit-device-pixel-ratio: 3){
     *{
         font-size: calc((2.5vw + 2.5vh)/2)
     }

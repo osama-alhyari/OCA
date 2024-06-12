@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <div class="cardsContainer">
+        <div class="card">
+            <img src="1.jpg" width="100%" height="70%">
+            <div class="name-price">
+                <p>Iphone 15</p>
+                <p><span id="price1">900</span> JDs</p>
+                
+            </div>
+            <button class="addButton" id="iphone" onclick="createItem('1',900)">Add To Cart</button>
+        </div>
+        <div class="card">
+            <img src="2.jpg" width="100%" height="70%">
+            <div class="name-price">
+                <p>Headphones</p>
+                <p><span id="price2">150</span> JDs</p>
+            </div>
+            <button class="addButton" id="headphones" onclick="createItem('2',150)">Add To Cart</button>
+        </div>
+        <div class="card">
+            <img src="3.jpg" width="100%" height="70%">
+            <div class="name-price">
+                <p>Keyboard</p>
+                <p><span id="price3">60</span> JDs</p>
+            </div>
+            <button class="addButton" id="keyboard" onclick="createItem('3',60)">Add To Cart</button>
+        </div>
+    </div>
+    <div class="itemsList">
+    </div>
+    <p class="total">Total</p>
+    <p id="totalCost" class="total">0</p>
+
+    <script src="shop.js"></script>
+</body>
+</html>
