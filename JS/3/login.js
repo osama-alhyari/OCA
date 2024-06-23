@@ -17,7 +17,7 @@ function checkCreds(e) {
     }
   }
   if (found) {
-    alert(`logged in as ${sessionStorage.getItem("name")}`);
+    window.location = "http://127.0.0.1:5500/JS/3/page.html";
   } else {
     alert("wrong email or password");
   }

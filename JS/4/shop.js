@@ -7,6 +7,21 @@ let total3 = 0;
 let total;
 function createItem(num, price) {
   if (localStorage.getItem(`${num}`)) {
+    document.querySelector(`#numberInput${num}`).value =
+      Number(document.querySelector(`#numberInput${num}`).value) + 1;
+    document.querySelector(`#priceXquantity${num}`).textContent =
+      price * Number(document.querySelector(`#numberInput${num}`).value);
+    if (document.querySelector("#priceXquantity1")) {
+      total1 = Number(document.querySelector("#priceXquantity1").textContent);
+      console.log(document.querySelector("#priceXquantity2"));
+    }
+    if (document.querySelector("#priceXquantity2")) {
+      total2 = Number(document.querySelector("#priceXquantity2").textContent);
+    }
+    if (document.querySelector("#priceXquantity3")) {
+      total3 = Number(document.querySelector("#priceXquantity3").textContent);
+    }
+    document.querySelector("#totalCost").textContent = total1 + total2 + total3;
     return;
   }
 

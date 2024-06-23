@@ -25,6 +25,9 @@ function clear1() {
 }
 
 function equal() {
+  // if ([operands.length === 0]) {
+  //   return;
+  // }
   total = Number(operands[0]);
   operands.push(numbers);
   for (let i = 0; i < operators.length; i += 1) {
