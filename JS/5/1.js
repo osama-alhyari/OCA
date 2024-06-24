@@ -9,15 +9,12 @@ function sendMessage() {
   }
   var ul = document.querySelector("#list");
   var li = document.createElement("li");
-
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "1.html", true);
+  xhr.open("GET", document.querySelector("#inputt").value, true);
 
   // Set up a function to handle the response data
-  xhr.onload = function () {
-    li.appendChild(
-      document.createTextNode(`${document.querySelector("#inputt").value}`)
-    );
+  xhr.onloadend = function () {
+    li.appendChild(document.createTextNode(`${xhr.responseURL.substring(27)}`));
     ul.appendChild(li);
     document.querySelector("#inputt").value = "";
     document.querySelector("#message").textContent = "";
