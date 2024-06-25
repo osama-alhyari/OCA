@@ -7,23 +7,24 @@ let parisTemp;
 let londonTemp;
 
 async function getData() {
-  const ammanCall = await fetch(
+  const ammanResponse = await fetch(
     "https://api.openweathermap.org/data/2.5/weather?q=Amman&appid=995e406ac7417e3ed1b85820a4eb0aa7"
   );
-  const ammanJson = await ammanCall.json();
+  console.log(ammanResponse);
+  const ammanJson = await ammanResponse.json();
   ammanTemp = Math.floor(Number(ammanJson.main.temp) - 273);
 
-  const parisCall = await fetch(
+  const parisResponse = await fetch(
     "https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=995e406ac7417e3ed1b85820a4eb0aa7"
   );
-  const parisJson = await parisCall.json();
+  const parisJson = await parisResponse.json();
   parisTemp = Math.floor(Number(parisJson.main.temp) - 273);
 
-  const londonCall = await fetch(
+  const londonResponse = await fetch(
     "https://api.openweathermap.org/data/2.5/weather?q=London&appid=995e406ac7417e3ed1b85820a4eb0aa7"
   );
 
-  const londonJson = await londonCall.json();
+  const londonJson = await londonResponse.json();
   londonTemp = Math.floor(Number(londonJson.main.temp) - 273);
 }
 
