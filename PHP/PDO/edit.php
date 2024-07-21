@@ -45,7 +45,7 @@
 								<td> <input type='text' name='name' id='name' value='" . $row['name'] . "'></td>
 								<td> <input type='text' name='address' id='address' value='" . $row['address'] . "'></td>
 								<td> <input type='text' name='salary' id='salary' value='" . $row['salary'] . "'></td>
-                                <td> <button id='btnnnn' type='button' class='btn btn-primary onclick='update(" . $row['id'] . ")'>Update Record</button></td>
+                                <td> <button id='btnnnn' type='button' class='btn btn-primary'>Update Record</button></td>
 								</tr>";
                         }
                     } catch (PDOException $e) {
